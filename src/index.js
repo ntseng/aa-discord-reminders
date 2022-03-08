@@ -140,7 +140,7 @@ client.on("ready", () => {
       previousDay = date.day();
       resetAlarms();
     }
-  }, 15 * 1000); // Check 15 every seconds
+  }, 15 * 60 * 1000); // Check 15 every minutes
 });
 
 client.login(secret.get("loginToken"));
